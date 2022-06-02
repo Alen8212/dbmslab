@@ -1,7 +1,6 @@
-> db.createUser({user : "user", pwd : "password",roles : [{ role : "userAdmin
-AnyDatabase",db: "admin"}]})
+> db.createUser({user:"alen",pwd:"password",roles:[{role:"userAdminAnyDatabase",db:"admin"}]})
 Successfully added user: {
-        "user" : "user",
+        "user" : "alen",
         "roles" : [
                 {
                         "role" : "userAdminAnyDatabase",
@@ -9,3 +8,31 @@ Successfully added user: {
                 }
         ]
 }
+
+> db.createUser({user:"alen",pwd:"password",roles:[{role:"read",db:"movie"},{role:"readWrite",db:"emplo
+yee"}]})
+Successfully added user: {
+        "user" : "alen",
+        "roles" : [
+                {
+                        "role" : "read",
+                        "db" : "movie"
+                },
+                {
+                        "role" : "readWrite",
+                        "db" : "employee"
+                }
+        ]
+}
+
+> db.createUser({user:"alen",pwd:"password",roles:[{role:"userAdmin",db:"admin"}]})
+Successfully added user: {
+        "user" : "alen",
+        "roles" : [
+                {
+                        "role" : "userAdmin",
+                        "db" : "admin"
+                }
+        ]
+}
+>
